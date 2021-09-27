@@ -1,0 +1,37 @@
+PANCAKESWAP FrontRunner BOT
+(JavaScript Implementation)
+
+• Step 1.
+Download and install Node.JS (LTS version recommended)
+Linux:
+sudo apt install nodejs
+Mac:
+brew install nodejs
+Windows:
+Download from Node.JS website
+• Step 2.
+Edit the .env settings
+
+
+REACT_APP_RPC_URL & REACT_APP_RPC_URL_WSS
+→ HTTP-URL and WSS providers. Use any Binance node service. Simply sign up for one of these services and enter provided URLS.
+REACT_APP_PRIVATE_KEY
+→ This is the private wallet key from MetaMask. I recommend creating a new wallet for this program.
+REACT_APP_ACCOUNT
+→ Your wallets public address (Make sure you Hold the PCS BOT Coin in this Wallet Address)
+REACT_APP_TOKEN_ADDRESS
+→ The address of your targeted token, make sure this is checksummed (contains uppercase characters). The address in the photo is for the token API3.
+REACT_APP_EXCHANGE_ADDRESS
+→ The PANCAKESWAP ROUTER V2 address. Do not change this.
+REACT_APP_BNB_AMOUNT & REACT_APP_TARGET_BNB_AMOUNT
+→ Pretty self explanatory. BNB_AMOUNT is the amount you are going to purchase, TARGET_BNB is the sale you are waiting for.
+REACT_APP_SLIPPAGE & REACT_APP_GAS_MULTIPLIER
+→ Slippage is the same as it would be on PANCAKESWAP. Make sure this is set corresponding to PANCAKESWAP.
+→ Gas Multiplier is how much you are going to speed up the transaction you are frontrunning. A good multiplier is typically between 1.3-2. The higher the multiplier, the more you will pay in gas fees.
+• Step 3.
+Navigate to the folder within terminal (cd & ls) and type node index.js to begin the program. You can quit anytime by pressing CTRL + C.
+
+IMPORTANT
+The .env may be missing from your folder view. I assure you it is there. Look up commands to show hidden files or if you use Sublime Text, simply subl . the directory and it will appear. APPROVE SWAP on PANCAKESWAP prior to using the frontrunner on a token, or else the bot will be able to buy but not sell.
+
+THANK YOU & ENJOY :)
