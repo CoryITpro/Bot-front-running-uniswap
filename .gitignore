@@ -1,0 +1,12 @@
+# Node Module Directory
+node_modules
+
+# Environmental Variables
+.env
+
+# Package setting
+package-lock.json
+
+# Text files
+*.txt
+
